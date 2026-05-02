@@ -39,6 +39,8 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         from commands.system_commands import CmdMesh, CmdMeshDm
         from commands.ai_commands import CmdInferNative, CmdThink, CmdModelInfo, CmdModelReload
         from commands.mythos_commands import CmdMythos
+        from commands.pki_commands import CmdCert
+        self.add(CmdCert)
         self.add(CmdMythos)
         self.add(CmdTiles)
         self.add(CmdTile)
