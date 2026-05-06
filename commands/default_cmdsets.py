@@ -40,8 +40,11 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         from commands.ai_commands import CmdInferNative, CmdThink, CmdModelInfo, CmdModelReload
         from commands.mythos_commands import CmdMythos
         from commands.pki_commands import CmdCert
+        from commands.p48_commands import CmdP48Search, CmdP48Status
         self.add(CmdCert)
         self.add(CmdMythos)
+        self.add(CmdP48Search)
+        self.add(CmdP48Status)
         self.add(CmdTiles)
         self.add(CmdTile)
         self.add(CmdTileSearch)
